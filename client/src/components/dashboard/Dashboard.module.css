@@ -1,0 +1,63 @@
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.dashboardContainer {
+  padding: 24px;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #48cae4, #00b4d8, #0096c7, #023e8a);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+}
+
+.chartContainer {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.chartContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+}
+
+.totalBalance {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.datePicker {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 8px;
+}
